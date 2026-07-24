@@ -1,8 +1,8 @@
 class Solution {
     public int maxProfit(int[] prices) {
         int max=0,min=prices[0];
-        for(int i=0;i<prices.length;i++){
-            if(prices[i]<min){
+        for(int i=1;i<prices.length;i++){
+            if(prices[i]<min){//kana current day ra price less achi min ru
                 min=prices[i];
             }
             int profit=prices[i]-min;
