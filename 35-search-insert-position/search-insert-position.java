@@ -12,7 +12,7 @@ class Solution {
             else
             right=mid-1;
         }
-        return left;
+        return left;//target nhhi mil toh left position mai insert kardo as wahi correct position hai
         
     }
 }
