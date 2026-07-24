@@ -2,8 +2,7 @@ class Solution {
     public String intToRoman(int num) {
         String ans = "";
 
-        while (num > 0) {
-
+        while (num > 0) {//repetive subtraction as per case 
             if (num >= 1000) {
                 ans += "M";
                 num -= 1000;
@@ -57,7 +56,6 @@ class Solution {
                 num -= 1;
             }
         }
-
         return ans;
     }
 }
