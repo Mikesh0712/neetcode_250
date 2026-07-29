@@ -1,21 +1,18 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int ans=0;
-
-        for(int i=0;i<32;i++){
-            int count=0;
-            //count set bits at position i
-            for(int num:nums){
-                if(((num>>i)&1)==1)
-                {
-                    count++;
-                }
+        Arrays.sort(nums);
+        int n=nums.length;
+        for(int i=0;i<n-2;i+=3) 
+        {
+            if (nums[i]!=nums[i + 1]) 
+            {
+                return nums[i];
             }
-            // If remainder is 1, this bit belongs to answer
-            if(count%3!=0){
-                ans|=(1<<i);
+            if(nums[i+1]!=nums[i+2])
+             {
+                return nums[i+2];
             }
         }
-        return ans;
+        return nums[n - 1];
     }
 }
