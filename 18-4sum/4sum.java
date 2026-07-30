@@ -14,6 +14,7 @@ class Solution {
             int left = j+1;
             int right = nums.length - 1;
             while (left < right) {
+                //to avoid overflow
                 long sum =(long) nums[i] + nums[left] + nums[right]+nums[j];;
                 if (sum == target) {
                     ans.add(Arrays.asList(nums[i],nums[j], nums[left], nums[right]));
