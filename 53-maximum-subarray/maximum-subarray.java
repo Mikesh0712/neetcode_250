@@ -11,12 +11,12 @@ class Solution {
         // }
         // return max;
 
-
+        //kadanse algorithm 
         int sum=0,max=Integer.MIN_VALUE;
             for(int i=0;i<nums.length;i++){
                 sum+=nums[i];
                 max=Math.max(sum,max);
-                if(sum<0)
+                if(sum<0)//current sum is negative then make sum =0 and leave that element and go to next element and start from its subarray 
                 sum=0;
             }
         return max;
