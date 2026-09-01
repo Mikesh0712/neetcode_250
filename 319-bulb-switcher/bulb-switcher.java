@@ -8,4 +8,4 @@ class Solution {
         
     }
 }
-//the numbers which are perfect squares are the bulbs which 
+//the numbers which are perfect squares are the bulbs which switch on 
