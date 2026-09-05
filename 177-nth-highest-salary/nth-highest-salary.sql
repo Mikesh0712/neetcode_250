@@ -9,3 +9,7 @@ SET N=N-1;
         LIMIT 1 OFFSET N
   );
 END
+
+
+#best write
+#select distinct salary from employee order by salary desc limit 1 offset n-1 in normal sql
